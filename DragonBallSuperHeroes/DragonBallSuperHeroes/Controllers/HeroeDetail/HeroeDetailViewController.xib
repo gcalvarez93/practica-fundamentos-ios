@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroeDetailViewController" customModule="DragonBallSuperHeroes" customModuleProvider="target">
+            <connections>
+                <outlet property="heroeDescription" destination="akN-Lw-2LG" id="VgA-nO-J6c"/>
+                <outlet property="heroeImage" destination="fHF-uA-Z8U" id="2wu-rQ-mF4"/>
+                <outlet property="transformationsButton" destination="Pwu-YH-yiz" id="3rf-rl-krr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHF-uA-Z8U">
+                    <rect key="frame" x="0.0" y="58.999999999999986" width="393" height="209.66666666666663"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fHF-uA-Z8U" secondAttribute="height" multiplier="15:8" id="6ID-xm-1aF"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwu-YH-yiz">
+                    <rect key="frame" x="8" y="743.66666666666663" width="377" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ezr-2V-dfJ"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Transformaciones">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="didTapTransformations:" destination="-1" eventType="touchUpInside" id="Oik-Hz-eOB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heroe Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akN-Lw-2LG">
+                    <rect key="frame" x="12" y="298" width="369" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="akN-Lw-2LG" secondAttribute="trailing" constant="12" id="GsV-WM-pII"/>
+                <constraint firstItem="fHF-uA-Z8U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PNe-12-GKQ"/>
+                <constraint firstItem="Pwu-YH-yiz" firstAttribute="centerX" secondItem="fHF-uA-Z8U" secondAttribute="centerX" id="Pwo-NU-gVe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pwu-YH-yiz" secondAttribute="bottom" constant="30.333333333333371" id="S09-kR-NlP"/>
+                <constraint firstItem="akN-Lw-2LG" firstAttribute="top" secondItem="fHF-uA-Z8U" secondAttribute="bottom" constant="29.333333333333371" id="ZWS-LH-OCK"/>
+                <constraint firstItem="akN-Lw-2LG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="crf-Ag-anz"/>
+                <constraint firstAttribute="trailing" secondItem="fHF-uA-Z8U" secondAttribute="trailing" id="jWz-qd-IVz"/>
+                <constraint firstItem="fHF-uA-Z8U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ou9-bT-fve"/>
+                <constraint firstItem="Pwu-YH-yiz" firstAttribute="leading" secondItem="akN-Lw-2LG" secondAttribute="leading" constant="-4" id="vko-Tn-919"/>
+            </constraints>
+            <point key="canvasLocation" x="43.511450381679388" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

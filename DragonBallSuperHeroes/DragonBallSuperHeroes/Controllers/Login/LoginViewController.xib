@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DragonBallSuperHeroes" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTextField" destination="3fe-A2-TIf" id="A7k-R1-Udl"/>
+                <outlet property="userNameTextField" destination="zRl-Jr-fOR" id="XLt-SP-vfo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRl-Jr-fOR">
+                    <rect key="frame" x="12" y="360" width="369" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="J7L-zD-D1u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fe-A2-TIf">
+                    <rect key="frame" x="12" y="428" width="369" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="yEi-F4-R79"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSi-Ff-VNh">
+                    <rect key="frame" x="12" y="495.99999999999994" width="369" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión"/>
+                    <connections>
+                        <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="aem-gc-QsF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zRl-Jr-fOR" secondAttribute="trailing" constant="12" id="K7J-jQ-yrV"/>
+                <constraint firstItem="zRl-Jr-fOR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="UhT-Cj-OVj"/>
+                <constraint firstItem="oSi-Ff-VNh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="YlR-17-qfg"/>
+                <constraint firstItem="zRl-Jr-fOR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="301" id="dcH-Zc-qSj"/>
+                <constraint firstItem="3fe-A2-TIf" firstAttribute="top" secondItem="zRl-Jr-fOR" secondAttribute="bottom" constant="24" id="ffS-L6-ica"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3fe-A2-TIf" secondAttribute="trailing" constant="12" id="mpR-3K-ifS"/>
+                <constraint firstItem="oSi-Ff-VNh" firstAttribute="top" secondItem="3fe-A2-TIf" secondAttribute="bottom" constant="24" id="msr-ct-7ji"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oSi-Ff-VNh" secondAttribute="trailing" constant="12" id="n6R-Ek-pmj"/>
+                <constraint firstItem="3fe-A2-TIf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="tj6-7W-WFC"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
