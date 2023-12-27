@@ -1,6 +1,6 @@
 # Práctica Fundamentos iOS
 
-Desarrollo de una aplicación iOS que consuma la API Rest Dragon Ball de KeepCoding presentada en clase.
+El proyecto consiste en una app que consume el API de Dragon Ball de KeepCoding. La app consta de 3 pantallas, un login, una pantalla con una lista de héroes y una pantalla de detalle de cada héroe. Además los héroes que tienen transformaciones muestran un botón para ver las transformaciones de dicho héroe.
 
 ![https://github.com/gcalvarez93](https://raw.githubusercontent.com/gcalvarez93/practica-fundamentos-ios/main/splashscreen.png)
 ![https://github.com/gcalvarez93](https://raw.githubusercontent.com/gcalvarez93/practica-fundamentos-ios/main/login.png)
